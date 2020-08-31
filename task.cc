@@ -28,14 +28,6 @@
  * Good luck!
  * Now, find WHITE-RABBIT(1), go!
  */
-
-bool descendingOrder(uint64_t a, uint64_t b)
-{
-	if(a>b) return true;
-	else return false;
-}
-
-
 class DataStore {
 private:
 	std::vector<std::string> words;
@@ -318,7 +310,6 @@ void MyTask::finish_the_work(void) {
 				if (MyTask::is_prime(i) && (n % i == 0))
 					result.push_back(i);
 			}
-                        result.sort(descendingOrder);
 
 			return result;
 
